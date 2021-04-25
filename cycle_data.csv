@@ -1,0 +1,101 @@
+issue_code_,created_at,severity,resolution,affected_components,creator_id
+CYCLE-10-1,13/04/2021 15:35:36,Low,Confirmed (S),{Signup},8124
+CYCLE-10-2,13/04/2021 15:40:15,Low,Confirmed (S),{Signup},8124
+CYCLE-10-3,13/04/2021 15:41:28,Low,Confirmed (S),{Signup},1066
+CYCLE-10-4,13/04/2021 15:41:38,High,Confirmed (S),{Signup},4075
+CYCLE-10-5,13/04/2021 15:43:07,Medium,Confirmed (S),{Profile},3230
+CYCLE-10-6,13/04/2021 15:43:32,Low,Confirmed (S),{Signup},5271
+CYCLE-10-7,13/04/2021 15:46:35,Low,Confirmed (S),{Signup},4693
+CYCLE-10-8,13/04/2021 15:46:44,Medium,Confirmed (S),Profile,8058
+CYCLE-10-9,13/04/2021 15:46:53,High,Confirmed (S),{Profile},3230
+CYCLE-10-10,13/04/2021 15:47:03,Low,Duplicate,{Signup},1066
+CYCLE-10-11,13/04/2021 15:49:22,Medium,Confirmed (S),{Profile},3230
+CYCLE-10-12,13/04/2021 15:49:31,High,Confirmed (S),{Signup},1066
+CYCLE-10-13,,Medium,Confirmed (S),{Sign-up},5271
+CYCLE-10-14,13/04/2021 15:51:06,Low,Confirmed (S),{Profile},3230
+CYCLE-10-15,13/04/2021 15:51:34,High,Confirmed (S),{Content},8049
+CYCLE-10-16,13/04/2021 15:53:54,High,Confirmed (S),{Challenge},8124
+CYCLE-10-17,13/04/2021 15:54:23,Low,Confirmed (S),{Profile},3230
+CYCLE-10-18,13/04/2021 15:57:28,Medium,Confirmed (S),{Workouts},5271
+CYCLE-10-19,13/04/2021 15:57:35,Medium,Confirmed (S),{Signup},4693
+CYCLE-10-20,13/04/2021 15:58:32,Medium,Confirmed (S),{Profile},3230
+CYCLE-10-21,13/04/2021 15:59:19,Low,Confirmed (S),{Workouts},8124
+CYCLE-10-22,13/04/2021 16:00:20,Critical,Confirmed (S),{Profile},4487
+CYCLE-10-23,13/04/2021 16:00:51,Medium,Expected Behaviour,{Content},5271
+CYCLE-10-24,13/04/2021 16:00:55,High,Confirmed (S),{Workouts},5589
+CYCLE-10-25,13/04/2021 16:02:48,Medium,Duplicate,{Settings},1066
+CYCLE-10-26,13/04/2021 16:02:54,Medium,Expected Behaviour,{Profile},8058
+CYCLE-10-27,13/04/2021 16:03:13,High,Confirmed (S),{Profile},4075
+CYCLE-10-28,13/04/2021 16:05:16,Medium,Confirmed (S),{Profile},3230
+CYCLE-10-29,13/04/2021 16:05:28,Medium,Confirmed (S),{Kit},6435
+CYCLE-10-30,13/04/2021 16:05:45,Low,Confirmed (S),{Workouts},8124
+CYCLE-10-31,13/04/2021 16:06:10,Low,Confirmed (S),{Content},1066
+CYCLE-10-32,13/04/2021 16:06:36,Medium,Confirmed (S),{Profile},1765
+CYCLE-10-33,13/04/2021 16:09:21,High,Confirmed (S),{Content},4693
+CYCLE-10-34,13/04/2021 16:10:19,Low,Confirmed (S),{Kit},3230
+CYCLE-10-35,13/04/2021 16:12:17,Low,Confirmed (S),{Content},1066
+CYCLE-10-36,13/04/2021 16:13:14,Low,Confirmed (S),{Kit},8124
+CYCLE-10-37,13/04/2021 16:14:44,High,Confirmed (S),{Kit},3230
+CYCLE-10-38,13/04/2021 16:16:11,Medium,Confirmed (S),{Profile},1765
+CYCLE-10-39,13/04/2021 16:17:27,Medium,Confirmed (S),{Workouts},4075
+CYCLE-10-40,13/04/2021 16:19:52,Medium,Confirmed (S),{Content},8124
+CYCLE-10-41,13/04/2021 16:20:58,Low,Duplicate,{Guides},1066
+CYCLE-10-42,13/04/2021 16:21:22,High,Confirmed (S),{Signup},6380
+CYCLE-10-43,13/04/2021 16:22:34,Low,Confirmed (S),{Profile},5589
+CYCLE-10-44,13/04/2021 16:24:45,Low,Confirmed (S),{Guides},1066
+CYCLE-10-45,04/13/2021 16:25:40,High,Confirmed (S),{Workouts},4693
+CYCLE-10-46,13/04/2021 16:25:49,Medium,Confirmed (S),{Workouts},4487
+CYCLE-10-47,13/04/2021 16:26:02,Critical,Confirmed (S),{Workouts},5271
+CYCLE-10-48,13/04/2021 16:26:15,Critical,Confirmed (S),{Workouts},3230
+CYCLE-10-49,13/04/2021 16:28:58,Low,Confirmed (S),{Guides},1066
+CYCLE-10-50,13/04/2021 16:30:38,Low,Confirmed (S),{Guides},1765
+CYCLE-10-51,13/04/2021 16:31:21,Medium,Expected Behaviour,{Signup},6435
+CYCLE-10-52,13/04/2021 16:32:11,Medium,Confirmed (S),{Workouts},3230
+CYCLE-10-53,13/04/2021 16:33:23,High,Confirmed (S),{Signup},1120
+CYCLE-10-54,13/04/2021 16:35:00,Medium,Confirmed (S),{Signup},6380
+CYCLE-10-55,13/04/2021 16:35:59,Low,Duplicate,{Workouts},
+CYCLE-10-55,13/04/2021 16:38:39,High,Confirmed (S),{Kit},4693
+CYCLE-10-57,13/04/2021 16:40:33,Medium,Confirmed (!),{Content},4487
+CYCLE-10-58,13/04/2021 16:42:52,Critical,Confirmed (S),{Signup},5271
+CYCLE-10-59,13/04/2021 16:43:02,Medium,Confirmed (S),{Workouts},6380
+CYCLE-10-60,13/04/2021 16:44:51,Low,Confirmed (S),{Meals},8124
+CYCLE-10-61,13/04/2021 16:45:38,Medium,Confirmed (S),{Meals},3230
+CYCLE-10-62,13/04/2021 16:45:50,Medium,Confirmed (S),{Workouts},6435
+CYCLE-10-63,13/04/2021 16:46:16,High,Confirmed (S),{Workouts},4075
+CYCLE-10-64,13/04/2021 16:49:29,Critical,Invalid - not tester error,{Workouts},5271
+CYCLE-10-65,13/04/2021 17:01:19,Medium,Confirmed (S),{Profile},5271
+CYCLE-10-66,13/04/2021 17:02:08,Low,Confirmed (S),{Workouts},6380
+CYCLE-10-67,13/04/2021 17:02:25,High,Confirmed (S),{Meals},8124
+CYCLE-10-68,13/04/2021 17:03:58,Medium,Duplicate,{Workouts},6435
+CYCLE-10-69,13/04/2021 17:04:33,High,Confirmed (S),{Content},1120
+CYCLE-10-70,13/04/2021 17:07:06,Low,Confirmed (S),{Workouts},5271
+CYCLE-10-71,13/04/2021 17:08:05,Medium,Confirmed (S),{Workouts},4487
+CYCLE-10-72,13/04/2021 17:09:32,Medium,Confirmed (S),{Workouts},5589
+CYCLE-10-73,13/04/2021 17:16:32,Low,Not in Scope,{Profile},1765
+CYCLE-10-74,13/04/2021 17:28:46,High,Confirmed (S),{Profile},8124
+CYCLE-10-75,13/04/2021 17:34:03,Medium,Expected Behaviour,{Content},1120
+CYCLE-10-76,13/04/2021 17:38:23,Low,Confirmed (S),{Profile},8124
+CYCLE-10-77,13/04/2021 17:42:34,High,Confirmed (S),{Signup},4487
+CYCLE-10-78,13/04/2021 17:43:56,Medium,Confirmed (S),{Settings},8124
+CYCLE-10-79,13/04/2021 18:00:52,High,Confirmed (S),{Login},1120
+CYCLE-10-80,13/04/2021 18:42:59,Low,Not in Scope,{Workouts},7594
+CYCLE-10-81,13/04/2021 18:46:09,Medium,No tester response,{Profile},6435
+CYCLE-10-82,13/04/2021 18:47:00,Medium,Confirmed (S),{Challenge},4487
+CYCLE-10-83,13/04/2021 18:58:48,High,Confirmed (S),{Signup},4487
+CYCLE-10-84,13/04/2021 19:01:57,High,Duplicate,{Login},6435
+CYCLE-10-85,13/04/2021 19:10:27,Medium,Confirmed (S),{Challenge},5271
+CYCLE-10-86,13/04/2021 19:14:45,Low,Confirmed (S),{Workouts},7594
+CYCLE-10-87,13/04/2021 19:24:03,High,Confirmed (S),{Profile},4487
+10-88,13/04/2021 19:42:28,Medium,Confirmed (S),{Workouts},6435
+CYCLE-10-89,13/04/2021 20:08:18,Medium,Confirmed (S),{Profile},7594
+CYCLE-10-90,13/04/2021 20:40:51,Medium,Confirmed (S),{Profile},4487
+CYCLE-10-91,13/04/2021 20:44:48,Medium,Confirmed (S),{Profile},7594
+CYCLE-10-92,13/04/2021 20:47:27,Low,Confirmed (S),{Profile},6435
+CYCLE-10-93,13/04/2021 20:53:12,Medium,Confirmed (S),{Challenge},5271
+CYCLE-10-94,13/04/2021 20:55:56,Low,Duplicate,{Profile},7594
+CYCLE-10-95,13/04/2021 21:15:51,High,Confirmed (S),{Profile},4487
+CYCLE-1096,13/04/2021 21:39:13,Medium,Confirmed (S),{Content},6435
+CYCLE-10-97,13/04/2021 21:46:58,Critical,Confirmed (S),{Workouts},5589
+CYCLE-10-98,13/04/2021 21:54:29,Low,Confirmed (S),{Workouts},5271
+CYCLE-10-99,13/04/2021 21:59:34,Medium,Confirm (S),{Workouts},5271
+CYCLE-10-100,13/04/2021 22:08:14,Medium,Confirmed (S),{Content},5271
