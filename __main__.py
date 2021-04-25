@@ -21,10 +21,10 @@ If you will be able to show that metric, PM will appreciate analysis of the data
 
 Create the view that will show the given metric and suggest another charts that will be helpful for PM.
 """
-from tableau_intern_task.data_reading.cleaning import clean
-from tableau_intern_task.data_reading.printing import get_set
-from tableau_intern_task.data_reading.selecting import select
-from tableau_intern_task.data_reading.csv_operations import *
+from data_reading.cleaning import clean
+from data_reading.printing import get_set
+from data_reading.selecting import select
+from data_reading.csv_operations import *
 
 if __name__ == "__main__":
     # read the data
@@ -40,4 +40,3 @@ if __name__ == "__main__":
 
     # save the data as all rows are selected and cleaned for analysis
     save_the_csv(curr_data, "done")
-    pass
