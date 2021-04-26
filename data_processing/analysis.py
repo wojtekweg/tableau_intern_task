@@ -15,7 +15,7 @@ def count_severity_weights(data_in):
     return curr_sum / len(data_in)
 
 
-def generate_analysis(directory):
+def generate_component_analysis(directory):
     """
     For each component generate a dictionary with absolute and relative errors produced per hour.
     """
