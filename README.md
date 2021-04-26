@@ -33,13 +33,13 @@ In order to analise the given data I have taken the following steps:
 
 - Data cleaning
 
-    - If possible, matching the words for given pattern (for example no parenthesis).
+    - If possible, matching the words for given pattern (for example removing parenthesis).
     
     - Handling the date as `datetime` objects.
     
     - Estimating the dates of bugs with lack of date.
     
-    - Fitting the `resolution` and `cycle_id` columns to pattern.
+    - Fitting the `resolution` and `cycle_id` columns to the pattern.
     
     - Representing `severity` as a number in scale selected by the user.
 
@@ -62,6 +62,8 @@ modify the script, so it will analise the data in that point of view, instead of
 
 The visualization for the outcomes has been made in Google Docs Spreadsheets - I had no time for proper scripting the 
 visualizations, and I didn't want to make it anyhow, but automatic.
+
+All the outcomes are based on the task criteria - 6 hours time range since the first bug and "Confirmed" status.
 
 ## Thoughts about my solution
 
