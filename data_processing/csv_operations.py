@@ -1,4 +1,5 @@
 import csv
+import os
 
 
 def read_the_csv(filename):
@@ -32,19 +33,28 @@ def read_the_csv(filename):
     return read_data
 
 
-def save_the_csv(dict_in, suffix):
+def save_the_csv(dict_in, filename="cycle_data", suffix="", directory=""):
     csv_columns = [
         "id_maj",
         "id_min",
         "issue_code",
         "severity",
+        "severity_weight",
         "affected_components",
         "resolution",
         "resolution_status",
         "created_at",
         "creator_id",
         "notes"]
-    csv_file = f"cycle_data_{suffix}.csv"
+    if directory != "":
+        directory = f"./{directory}/"
+        try:
+            os.mkdir(f"./{directory}")
+        except OSError as e:
+            print("[ INFO ] No new directory was created.")
+    if suffix != "":
+        suffix = f"_{suffix}"
+    csv_file = f"{directory}{filename}{suffix}.csv"
     try:
         with open(csv_file, 'w') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
@@ -52,7 +62,7 @@ def save_the_csv(dict_in, suffix):
             for data in dict_in:
                 writer.writerow(data)
     except IOError:
-        print("I/O error")
+        print("[ ERROR ] Couldn't save the .csv file due to I/O error.")
 
 
 def delete_column_names(dict_in):

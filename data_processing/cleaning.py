@@ -21,6 +21,7 @@ def clean(data_in):
     clean_creator_id(data_in)
     clean_issue_code(data_in)
     clean_resolution(data_in)
+    clean_severity(data_in)
 
 
 # Cleaning of each keys
@@ -126,6 +127,18 @@ def clean_resolution(data_in):
             d["notes"] += f"Original resolution was '{d['resolution']}'"
             d["resolution"] = "Not tester error"
     pass
+
+
+def clean_severity(data_in):
+    add_key(data_in, "severity_weight")
+    severity_mapping = {
+        "Low": 1,
+        "Medium": 2,
+        "High": 3,
+        "Critical": 4
+    }
+    for d in data_in:
+        d["severity_weight"] = severity_mapping[d["severity"]]
 
 
 # Utilities helpful for cleaning process

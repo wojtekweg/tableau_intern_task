@@ -1,19 +1,16 @@
-from datetime import timedelta
-
-
-def select(data_in, start_time):
-    temp = select_resolution(data_in, "Confirmed")
-    temp = select_within_time_range(temp, start_time, timedelta(hours=6))
+def select(data_in, start_time, delta):
+    temp = select_given_key(data_in, 'resolution', "Confirmed")
+    temp = select_within_time_range(temp, start_time, delta)
     return temp
 
 
-def select_resolution(data_in, status):
+def select_given_key(data_in, key, status):
     """
     Function returns only the rows with the given :status: key.
     """
     temp = []
     for d in data_in:
-        if d["resolution"] == f"{status}":
+        if d[key] == f"{status}":
             temp.append(d)
     return temp
 

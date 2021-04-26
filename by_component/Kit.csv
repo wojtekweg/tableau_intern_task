@@ -1,0 +1,6 @@
+id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
+10,29,10-29,Medium,2,Kit,Confirmed,(S),2021-04-13 16:05:28,6435,
+10,34,10-34,Low,1,Kit,Confirmed,(S),2021-04-13 16:10:19,3230,
+10,36,10-36,Low,1,Kit,Confirmed,(S),2021-04-13 16:13:14,8124,
+10,37,10-37,High,3,Kit,Confirmed,(S),2021-04-13 16:14:44,3230,
+10,55,10-55,High,3,Kit,Confirmed,(S),2021-04-13 16:38:39,4693,

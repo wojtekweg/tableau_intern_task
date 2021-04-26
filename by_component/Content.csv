@@ -1,0 +1,8 @@
+id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
+10,15,10-15,High,3,Content,Confirmed,(S),2021-04-13 15:51:34,8049,
+10,31,10-31,Low,1,Content,Confirmed,(S),2021-04-13 16:06:10,1066,
+10,33,10-33,High,3,Content,Confirmed,(S),2021-04-13 16:09:21,4693,
+10,35,10-35,Low,1,Content,Confirmed,(S),2021-04-13 16:12:17,1066,
+10,40,10-40,Medium,2,Content,Confirmed,(S),2021-04-13 16:19:52,8124,
+10,57,10-57,Medium,2,Content,Confirmed,(!),2021-04-13 16:40:33,4487,
+10,69,10-69,High,3,Content,Confirmed,(S),2021-04-13 17:04:33,1120,

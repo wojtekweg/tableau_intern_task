@@ -1,0 +1,16 @@
+id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
+10,1,10-1,Low,1,Signup,Confirmed,(S),2021-04-13 15:35:36,8124,
+10,2,10-2,Low,1,Signup,Confirmed,(S),2021-04-13 15:40:15,8124,
+10,3,10-3,Low,1,Signup,Confirmed,(S),2021-04-13 15:41:28,1066,
+10,4,10-4,High,3,Signup,Confirmed,(S),2021-04-13 15:41:38,4075,
+10,6,10-6,Low,1,Signup,Confirmed,(S),2021-04-13 15:43:32,5271,
+10,7,10-7,Low,1,Signup,Confirmed,(S),2021-04-13 15:46:35,4693,
+10,12,10-12,High,3,Signup,Confirmed,(S),2021-04-13 15:49:31,1066,
+10,13,10-13,Medium,2,Signup,Confirmed,(S),2021-04-13 15:50:18.500000,5271,Date is estimated.
+10,19,10-19,Medium,2,Signup,Confirmed,(S),2021-04-13 15:57:35,4693,
+10,42,10-42,High,3,Signup,Confirmed,(S),2021-04-13 16:21:22,6380,
+10,53,10-53,High,3,Signup,Confirmed,(S),2021-04-13 16:33:23,1120,
+10,54,10-54,Medium,2,Signup,Confirmed,(S),2021-04-13 16:35:00,6380,
+10,58,10-58,Critical,4,Signup,Confirmed,(S),2021-04-13 16:42:52,5271,
+10,77,10-77,High,3,Signup,Confirmed,(S),2021-04-13 17:42:34,4487,
+10,83,10-83,High,3,Signup,Confirmed,(S),2021-04-13 18:58:48,4487,
