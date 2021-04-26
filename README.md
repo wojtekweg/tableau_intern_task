@@ -29,17 +29,50 @@ In order to analise the given data I have taken the following steps:
 
 - Handling I/O operations
 
+    - Reading and saving to/from .csv file with given schema of data.
+
 - Data cleaning
+
+    - If possible, matching the words for given pattern (for example no parenthesis).
+    
+    - Handling the date as `datetime` objects.
+    
+    - Estimating the dates of bugs with lack of date.
+    
+    - Fitting the `resolution` and `cycle_id` columns to pattern.
+    
+    - Representing `severity` as a number in scale selected by the user.
 
 - Selecting
 
-- Printing the solution
+    - Rejecting bugs with status different from `Confirmed`.
+    
+    - Rejecting bugs that does not fit the given time delta.
 
-For each step I have written scripts exclusively for this task. After all hard work, I realized that it wasn't necessary - 
-for example I should have used Pandas for cleaning and selecting the data, and I could possibly use some SQL database 
-instead of the .csv files.
+- Analysis and printing
 
+    - Automatically printing of the analysis written in human-readable format.
 
 ## Final outcomes
 
+Head to folder `./outcomes` if you wish to read the answer of the task. I focused only on severity and amount of the 
+errors, since these metrics seemed most obvious to me. I don't know exactly from where comes the given data, so I ignored
+some given data. For example `creator_id` column is ignored in my solution, although if needed it is fairly easy to 
+modify the script, so it will analise the data in that point of view, instead of severity.
 
+The visualization for the outcomes has been made in LibreOffice Calc - I had no time for making the visualizations from the script.
+
+## Thoughts about my solution
+
+For each step I have written scripts exclusively for this task. After all hard work, I realized that not all of my work 
+was necessary - for example I should have used Pandas for cleaning and selecting the data, and I could possibly use some 
+SQL database instead of the .csv files. I hope though, that my solution will meet assumptions of the task.
+
+What I know I should have made is visualization of the data. It is a pity that my answer doesn't come with that, but
+I simply couldn't find time to provide it. The main reason for that is my lack of time, which came in a pair with poor
+focus of the different aspects of the solution - I think that I should focus more on representation of analysis, than 
+on cleaning the data (I could have made some of clean-ups manually). On the other hand, I hope that you will appreciate
+that in most of the cases my solution is pretty much scalable and if not, it could be easily improved for handling other
+issues of provided data.
+
+The example input data is left in a repository, due to the nature of recruitment task.
