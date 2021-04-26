@@ -52,7 +52,7 @@ def save_the_csv(dict_in, filename="cycle_data", suffix="", directory=""):
         try:
             os.mkdir(f"./{directory}")
         except OSError:
-            print("[ INFO ] No new directory was created.")
+            pass
     if suffix != "":
         suffix = f"_{suffix}"
     csv_file = f"{directory}{filename}{suffix}.csv"

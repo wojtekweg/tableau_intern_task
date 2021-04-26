@@ -1,4 +1,4 @@
-Errors produced per hour for component (absolute = without considering severity, relative = with linear weight for severity of each component):
+Errors produced per hour for component (absolute = without considering severity, relative = with linear (1, 2, 3, 4) weight for severity of each component):
    Profile:
     3.6667 (absolute)
     0.3485 (relative)

@@ -45,13 +45,13 @@ def print_and_save(str_in, filename):
     return str_in
 
 
-def print_analysis(analysed_dict):
+def print_component_analysis(analysed_dict, scale):
     """
     Print out the analysed dictionary as a string and save it to the .txt file.
     """
     intend = "  "
     ret_str = "Errors produced per hour for component (absolute = without considering severity, relative = with " \
-              "linear weight for severity of each component):\n "
+              f"{scale} weight for severity of each component):\n "
     # print(json.dumps(data_in, indent=4))
     # generate the string
     for d in analysed_dict:
@@ -63,7 +63,7 @@ def print_analysis(analysed_dict):
     return ret_str
 
 
-def print_conclusion(analysed_dict, rounding=2):
+def print_component_conclusion(analysed_dict, rounding=2):
     """
     Sort the values and print it as a text.
     """
