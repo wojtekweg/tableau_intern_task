@@ -60,7 +60,8 @@ errors, since these metrics seemed most obvious to me. I don't know exactly from
 some given data. For example `creator_id` column is ignored in my solution, although if needed it is fairly easy to 
 modify the script, so it will analise the data in that point of view, instead of severity.
 
-The visualization for the outcomes has been made in LibreOffice Calc - I had no time for making the visualizations from the script.
+The visualization for the outcomes has been made in Google Docs Spreadsheets - I had no time for proper scripting the 
+visualizations, and I didn't want to make it anyhow, but automatic.
 
 ## Thoughts about my solution
 
