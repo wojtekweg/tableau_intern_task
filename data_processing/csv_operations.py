@@ -1,63 +1,64 @@
 import csv
 import os
 
+csv_columns_cleaned = [
+    "id_maj",
+    "id_min",
+    "issue_code",
+    "severity",
+    "severity_weight",
+    "affected_components",
+    "resolution",
+    "resolution_status",
+    "created_at",
+    "creator_id",
+    "notes"]
 
-def read_the_csv(filename):
+csv_columns_not_edited = [
+    "issue_code",
+    "created_at",
+    "severity",
+    "resolution",
+    "affected_components",
+    "creator_id"
+]
+
+
+def read_the_csv(filename, is_cleaned=True):
     """
     Reads the .csv file in format specified in cycle_data.csv file.
-    Expected format should contain following columns:
-    "issue_code": row[0]
-    "created_at": row[1]
-    "severity": row[2]
-    "resolution": row[3]
-    "affected_components": row[4]
-    "creator_id": row[5]
+    Expected format should contain columns specified in above variables.
     :param filename: Path to the file that we want to be read.
+    :param is_cleaned: Specify whether the file was already cleaned.
     :return: Array of dictionary objects with all parameters read.
     """
     read_data = []
+    csv_schema = csv_columns_cleaned if is_cleaned else csv_columns_not_edited
 
     with open(filename) as csvDataFile:
         csvReader = csv.reader(csvDataFile)
         for row in csvReader:
-            the_row = {
-                "issue_code": row[0],
-                "created_at": row[1],
-                "severity": row[2],
-                "resolution": row[3],
-                "affected_components": row[4],
-                "creator_id": row[5]
-            }
-            read_data.append(the_row)
+            temp = {}
+            for i in range(len(csv_schema)):
+                temp.update({csv_schema[i]: row[i]})
+            read_data.append(temp)
 
     return read_data
 
 
 def save_the_csv(dict_in, filename="cycle_data", suffix="", directory=""):
-    csv_columns = [
-        "id_maj",
-        "id_min",
-        "issue_code",
-        "severity",
-        "severity_weight",
-        "affected_components",
-        "resolution",
-        "resolution_status",
-        "created_at",
-        "creator_id",
-        "notes"]
     if directory != "":
         directory = f"./{directory}/"
         try:
             os.mkdir(f"./{directory}")
-        except OSError as e:
+        except OSError:
             print("[ INFO ] No new directory was created.")
     if suffix != "":
         suffix = f"_{suffix}"
     csv_file = f"{directory}{filename}{suffix}.csv"
     try:
         with open(csv_file, 'w') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns_cleaned)
             writer.writeheader()
             for data in dict_in:
                 writer.writerow(data)

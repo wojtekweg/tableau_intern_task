@@ -7,7 +7,7 @@ import os
 
 if __name__ == "__main__":
     # read the data
-    curr_data = read_the_csv("cycle_data.csv")
+    curr_data = read_the_csv("cycle_data.csv", is_cleaned=False)
     curr_data = delete_column_names(curr_data)
 
     clean(curr_data)
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     dir_to_search = './by_component'
     for file in os.listdir(dir_to_search):
         curr_component = read_the_csv(dir_to_search + "/" + file)
-        delete_column_names(curr_component)
-        print(curr_component)
+        curr_component = delete_column_names(curr_component)
+        print(curr_component[0]["severity"])
         print(len(curr_component))
 
