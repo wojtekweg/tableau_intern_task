@@ -37,7 +37,7 @@ def print_read_data(data_in):
 
 def print_and_save(str_in, filename):
     # save to file
-    text_file = open(f"{filename}.txt", "w")
+    text_file = open(f"./outcomes/{filename}.txt", "w")
     text_file.write(str_in)
     text_file.close()
 

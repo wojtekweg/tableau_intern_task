@@ -42,15 +42,15 @@ if __name__ == "__main__":
     # scales for weighting severity of the bugs
     scale_in, scale = user_input_scale()
     clean(curr_data, scale)
-    # save_the_csv(curr_data, "cleaned")
+    # save_the_csv(curr_data, directory="processed_files", filename="cycle_data", suffix="cleaned")
 
     first_reported_error_date = min(get_set(curr_data, "created_at"))
     error_date_range = timedelta(hours=6)
     curr_data = select(curr_data, first_reported_error_date, error_date_range)
-    # save_the_csv(curr_data, "selected")
+    # save_the_csv(curr_data, directory="processed_files", filename="cycle_data", suffix="selected")
 
     # save the data as all rows are selected and cleaned for analysis
-    save_the_csv(curr_data, filename="cycle_data", suffix="done")
+    save_the_csv(curr_data, directory="processed_files", filename="cycle_data", suffix="done")
 
     # group the columns by the affected components
     for component in get_set(curr_data, "affected_components"):
