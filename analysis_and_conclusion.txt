@@ -1,0 +1,35 @@
+Errors produced per hour for component (absolute = without considering severity, relative = with linear weight for severity of each component):
+   Profile:
+    3.6667 (absolute)
+    0.3485 (relative)
+  Challenge:
+    0.6667 (absolute)
+    0.3750 (relative)
+  Signup:
+    2.5000 (absolute)
+    0.3667 (relative)
+  Workouts:
+    3.1667 (absolute)
+    0.3509 (relative)
+  Guides:
+    0.5000 (absolute)
+    0.1667 (relative)
+  Meals:
+    0.5000 (absolute)
+    0.3333 (relative)
+  Login:
+    0.1667 (absolute)
+    0.5000 (relative)
+  Kit:
+    0.8333 (absolute)
+    0.3333 (relative)
+  Settings:
+    0.1667 (absolute)
+    0.3333 (relative)
+  Content:
+    1.1667 (absolute)
+    0.3571 (relative)
+
+Component that was affected with biggest number of bugs was Profile, with 22 bugs, what resulted in 3.67 bugs per hour.
+Although, considering the severity of each bug, we can say that component Login is the most bugged, with indicator of 0.5 weighted bugs per hour.
+The second biggest value for that scale is 0.38 and the lowest value is 0.17 for Guides component.

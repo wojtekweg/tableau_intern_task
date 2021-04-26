@@ -1,9 +1,9 @@
 from data_processing.cleaning import clean
 from data_processing.printing import get_set
 from data_processing.selecting import *
+from data_processing.analysis import *
 from data_processing.csv_operations import *
 from datetime import timedelta
-import os
 
 if __name__ == "__main__":
     # read the data
@@ -30,13 +30,6 @@ if __name__ == "__main__":
     #     temp = select_given_key(curr_data, "creator_id", creator)
     #     save_the_csv(temp, filename=creator, directory="by_creator")
 
-    # print out the analysis, by writing out:
-    # (1) simply the errors produced per hour
-    # (2) errors produced per hour, but each bug scaled by its severity
-    dir_to_search = './by_component'
-    for file in os.listdir(dir_to_search):
-        curr_component = read_the_csv(dir_to_search + "/" + file)
-        curr_component = delete_column_names(curr_component)
-        print(curr_component[0]["severity"])
-        print(len(curr_component))
-
+    # analyse the data
+    analysis = generate_analysis('./by_component')
+    print_and_save(print_analysis(analysis) + print_conclusion(analysis), "analysis_and_conclusion")
