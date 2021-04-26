@@ -1,2 +1,2 @@
 id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
-10,78,10-78,Medium,2,Settings,Confirmed,(S),2021-04-13 17:43:56,8124,
+10,78,10-78,Medium,100,Settings,Confirmed,(S),2021-04-13 17:43:56,8124,

@@ -33,3 +33,48 @@ def print_read_data(data_in):
         for d in temp:
             d["created_at"] = d["created_at"].strftime("%d %b %Y %H:%M:%S")
     print(json.dumps(temp, sort_keys=True, indent=4))
+
+
+def print_and_save(str_in, filename):
+    # save to file
+    text_file = open(f"{filename}.txt", "w")
+    text_file.write(str_in)
+    text_file.close()
+
+    print(str_in)
+    return str_in
+
+
+def print_analysis(analysed_dict):
+    """
+    Print out the analysed dictionary as a string and save it to the .txt file.
+    """
+    intend = "  "
+    ret_str = "Errors produced per hour for component (absolute = without considering severity, relative = with " \
+              "linear weight for severity of each component):\n "
+    # print(json.dumps(data_in, indent=4))
+    # generate the string
+    for d in analysed_dict:
+        ret_str += f"{intend}{d}:\n"
+
+        for i in analysed_dict[d]:
+            ret_str += f"{intend}{intend}{'{:.4f}'.format(round(analysed_dict[d][i], 4))} ({i})\n"
+
+    return ret_str
+
+
+def print_conclusion(analysed_dict, rounding=2):
+    """
+    Sort the values and print it as a text.
+    """
+    abs_sorted = sorted(analysed_dict, key=lambda x: analysed_dict[x]['absolute'])[::-1]
+    rel_sorted = sorted(analysed_dict, key=lambda x: analysed_dict[x]['relative'])[::-1]
+    ret_str = f"\nComponent that was affected with biggest number of bugs was {abs_sorted[0]}, with " \
+              f"{int(analysed_dict[abs_sorted[0]]['absolute'] * 6)} bugs, what resulted in " \
+              f"{round(analysed_dict[abs_sorted[0]]['absolute'], rounding)} bugs per hour.\n" \
+              f"Although, considering the severity of each bug, we can say that component {rel_sorted[0]} is " \
+              f"the most bugged, with indicator of {round(analysed_dict[rel_sorted[0]]['relative'], rounding)} " \
+              f"weighted bugs per hour.\nThe second biggest value for that scale is " \
+              f"{round(analysed_dict[rel_sorted[1]]['relative'], rounding)} for {rel_sorted[1]} and the lowest value " \
+              f"is {round(analysed_dict[rel_sorted[-1]]['relative'], rounding)} for {rel_sorted[-1]} component.\n"
+    return ret_str

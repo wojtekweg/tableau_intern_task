@@ -4,7 +4,7 @@ import re
 from dateutil import parser
 
 
-def clean(data_in):
+def clean(data_in, severity_scale=(1, 2, 3, 4)):
     """
     :param: Expected format should contain following keys
     "issue_code":
@@ -21,7 +21,7 @@ def clean(data_in):
     clean_creator_id(data_in)
     clean_issue_code(data_in)
     clean_resolution(data_in)
-    clean_severity(data_in)
+    clean_severity(data_in, severity_scale)
 
 
 # Cleaning of each keys
@@ -129,13 +129,13 @@ def clean_resolution(data_in):
     pass
 
 
-def clean_severity(data_in):
+def clean_severity(data_in, scale):
     add_key(data_in, "severity_weight")
     severity_mapping = {
-        "Low": 1,
-        "Medium": 2,
-        "High": 3,
-        "Critical": 4
+        "Low": scale[0],
+        "Medium": scale[1],
+        "High": scale[2],
+        "Critical": scale[3]
     }
     for d in data_in:
         d["severity_weight"] = severity_mapping[d["severity"]]

@@ -1,5 +1,5 @@
 from data_processing.cleaning import clean
-from data_processing.printing import get_set
+from data_processing.printing import *
 from data_processing.selecting import *
 from data_processing.analysis import *
 from data_processing.csv_operations import *
@@ -10,7 +10,11 @@ if __name__ == "__main__":
     curr_data = read_the_csv("cycle_data.csv", is_cleaned=False)
     curr_data = delete_column_names(curr_data)
 
-    clean(curr_data)
+    # scales for weighting severity of the bugs
+    scale_linear = (1, 2, 3, 4)
+    scale_log = (10, 100, 1000, 10000)
+    scale_custom = (1, 5, 15, 25)
+    clean(curr_data, scale_log)
     # save_the_csv(curr_data, "cleaned")
 
     first_reported_error_date = min(get_set(curr_data, "created_at"))
@@ -32,4 +36,4 @@ if __name__ == "__main__":
 
     # analyse the data
     analysis = generate_analysis('./by_component')
-    print_and_save(print_analysis(analysis) + print_conclusion(analysis), "analysis_and_conclusion")
+    print_and_save(print_analysis(analysis) + print_conclusion(analysis), "analysis_and_conclusion(custom_scale)")

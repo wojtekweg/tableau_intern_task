@@ -1,2 +1,2 @@
 id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
-10,79,10-79,High,3,Login,Confirmed,(S),2021-04-13 18:00:52,1120,
+10,79,10-79,High,1000,Login,Confirmed,(S),2021-04-13 18:00:52,1120,

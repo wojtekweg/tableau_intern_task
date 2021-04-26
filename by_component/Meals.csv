@@ -1,4 +1,4 @@
 id_maj,id_min,issue_code,severity,severity_weight,affected_components,resolution,resolution_status,created_at,creator_id,notes
-10,60,10-60,Low,1,Meals,Confirmed,(S),2021-04-13 16:44:51,8124,
-10,61,10-61,Medium,2,Meals,Confirmed,(S),2021-04-13 16:45:38,3230,
-10,67,10-67,High,3,Meals,Confirmed,(S),2021-04-13 17:02:25,8124,
+10,60,10-60,Low,10,Meals,Confirmed,(S),2021-04-13 16:44:51,8124,
+10,61,10-61,Medium,100,Meals,Confirmed,(S),2021-04-13 16:45:38,3230,
+10,67,10-67,High,1000,Meals,Confirmed,(S),2021-04-13 17:02:25,8124,
